@@ -14,9 +14,9 @@ git add .
 git commit -m "chore: initialize repository"
 ```
 
-## 2. Fix GitHub CLI Authentication
+## 2. Fix GitHub CLI Authentication If Needed
 
-`gh auth status` currently reports an invalid token for `sachinht18`. Re-authenticate before creating the remote:
+If `gh auth status` reports an invalid token or no active session, re-authenticate before creating the remote:
 
 ```bash
 gh auth login -h github.com
@@ -27,6 +27,8 @@ After login succeeds:
 ```bash
 gh auth status
 ```
+
+If your local shell cannot reach `api.github.com`, the repository creation step will fail even with valid auth. In that case, create the repository in the GitHub web UI and then run the push commands locally from a machine with outbound GitHub access.
 
 ## 3. Create And Push The GitHub Repository
 
