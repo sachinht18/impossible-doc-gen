@@ -16,7 +16,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@ai-sdk/openai": "^3.0.48",
+    "@ai-sdk/openai": "^3.0.52",
     "ai": "^6.0.137",
     "framer-motion": "^12.38.0",
     "lucide-react": "^1.0.1",
